@@ -29,6 +29,6 @@ const checkTeamspeakViaTelnet = (): Promise<string> => {
         sock.destroy();
         rej("Teamspeak is down");
       })
-      .connect(10011, "192.168.178.26");
+      .connect(10011, "10.0.10.10");
   });
 };
